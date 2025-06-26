@@ -32,23 +32,40 @@
     />
 
     <!-- ANIMATE CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
 
+    <!-- JOS ANIMATION -->
+
+    <link
+      id="jos-stylesheet"
+      rel="stylesheet"
+      href="https://unpkg.com/jos-animation/dist/jos.css"
+      crossorigin="anonymous"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- JOS SCRIPT -->
+
+    <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+
     <!-- HEADER  -->
-    <!-- <header>
-      <nav class="bg-orange-50 border-gray-200 dark:bg-orange-50">
+    <header>
+      <nav class="bg-[#EEEAE4] border-gray-200 dark:bg-[#EEEAE4]">
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
         >
           <a
-            href="https://flowbite.com/"
+            href="https://azzle.netlify.app"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -58,24 +75,24 @@
             />
           </a>
           <div
-            class="flex md:order-2 space-x-5 md:space-x-5 rtl:space-x-reverse py-3"
+            class="flex sm:flex-row space-y-3 sm:space-y-0 md:order-2 space-x-5 md:space-x-5 rtl:space-x-reverse py-3"
           >
             <button
               type="button"
-              class="text-black-500 bg-transparent hover:bg-red-200 focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full border text-md px-8 py-2 text-center dark:bg-orange-50 dark:hover:bg-red-300 dark:focus:ring-red-300"
+              class="text-black-500 bg-transparent hover:bg-[#FE330A] focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full border text-md px-6 py-2 text-center dark:bg-[orange-50] dark:hover:bg-[#FE330A] dark:focus:ring-orange-500 cursor-pointer"
             >
               Login
             </button>
             <button
               type="button"
-              class="text-white bg-black-500 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-md px-4 py-2 text-center dark:bg-black dark:hover:bg-red-300 dark:focus:ring-red-300"
+              class="text-white bg-black-500 hover:bg-[#FE330A] focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full text-md px-6 py-3 text-center dark:bg-black dark:hover:bg-[#FE330A] dark:focus:ring-orange-500 cursor-pointer"
             >
               Sign up free
             </button>
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-cta"
               aria-expanded="false"
             >
@@ -98,107 +115,615 @@
             </button>
           </div>
           <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-cta"
           >
             <ul
-              class="flex flex-col font-medium md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-orange-50 dark:bg-orange-50 md:dark:bg-orange-50 dark:border-orange-50"
+              class="flex flex-col text-md font-semibold md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-orange-50 dark:bg-orange-50 md:dark:bg-orange-50 dark:border-orange-50"
             >
-              <li>
+              <li class="relative group">
                 <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="block py-2 px-3 md:p-0 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:dark:hover:text-black dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="flex items-center text-black px-3 py-2 hover:text-black cursor-pointer"
                 >
                   Demo
                   <svg
-                    class="w-2.5 h-2.5 ms-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
+                    class="w-2.5 h-2.5 ml-2.5"
                     viewBox="0 0 10 6"
+                    fill="none"
                   >
                     <path
+                      d="M1 1L5 5L9 1"
                       stroke="currentColor"
+                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 1 4 4 4-4"
                     />
                   </svg>
-                </button> -->
-    <!-- Dropdown menu -->
-    <!-- <div
-                  id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600"
+                </button>
+
+                <!-- Dropdown menu -->
+                <div
+                  class="absolute left-0 z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-white text-black rounded-lg shadow-md mt-2 w-44 transition-all duration-700 ease-in-out"
                 >
-                  <ul
-                    class="py-2 text-sm text-gray-700 dark:text-gray-400"
-                    aria-labelledby="dropdownLargeButton"
-                  >
+                  <!-- Mũi nhọn -->
+                  <div
+                    class="absolute -top-2 left-6 w-4 h-4 bg-white rotate-45 pointer-events-none"
+                  ></div>
+
+                  <ul class="py-2 text-sm">
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Dashboard</a
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Home 01</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Settings</a
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Home 02</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                        >Earnings</a
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Home 03</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Home 04</a
                       >
                     </li>
                   </ul>
-                  <div class="py-1">
-                    <a
-                      href="#"
-                      class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-                      >Sign out</a
-                    >
-                  </div>
                 </div>
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 md:p-0 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:dark:hover:text-black dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >About</a
+                  class="flex items-center px-3 py-2 text-black hover:text-black cursor-pointer"
                 >
+                  About
+                </a>
+              </li>
+              <li class="relative group">
+                <button
+                  class="flex items-center text-black px-3 py-2 hover:text-black cursor-pointer"
+                >
+                  Services
+                  <svg
+                    class="w-2.5 h-2.5 ml-2.5"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1L5 5L9 1"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Dropdown menu -->
+                <div
+                  class="absolute left-0 z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-white text-black rounded-lg shadow-md mt-2 w-44 transition-all duration-700 ease-in-out"
+                >
+                  <!-- Mũi nhọn -->
+                  <div
+                    class="absolute -top-2 left-6 w-4 h-4 bg-white rotate-45 pointer-events-none"
+                  ></div>
+
+                  <ul class="py-2 text-sm font-semibold">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Service Details</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="relative group">
+                <!-- Nút chính -->
+                <button
+                  class="flex items-center px-3 py-2 text-black hover:text-black cursor-pointer"
+                >
+                  Pages
+                  <svg
+                    class="w-2.5 h-2.5 ml-2.5"
+                    viewBox="0 0 10 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1L5 5L9 1"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <!-- Dropdown cấp 1 -->
+                <div
+                  class="absolute left-0 z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 bg-white text-black rounded-lg shadow-md mt-2 w-56 transition-all duration-300 ease-in-out"
+                >
+                  <!-- Mũi nhọn -->
+                  <div
+                    class="absolute -top-2 left-6 w-4 h-4 bg-white rotate-45 pointer-events-none"
+                  ></div>
+                  <ul class="py-2 text-sm">
+                    <!-- Blog -->
+                    <li class="relative group/item">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2 hover:text-red-500"
+                      >
+                        Blog
+                        <svg
+                          class="w-3 h-3 ml-2"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            d="M1 1l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <ul
+                        class="absolute top-0 left-full ml-2 hidden group-hover/item:block z-20 bg-white rounded-lg shadow-md w-48 text-md transition-all duration-300 ease-in-out"
+                      >
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Blog</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Blog Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Team -->
+                    <li class="relative group/item">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2 hover:text-red-500"
+                      >
+                        Team
+                        <svg
+                          class="w-3 h-3 ml-2"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            d="M1 1l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <ul
+                        class="absolute top-0 left-full ml-2 hidden group-hover/item:block z-20 bg-white rounded-lg shadow-md w-48 text-sm"
+                      >
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Team</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Team Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- FAQ -->
+                    <li class="relative group/item">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2 hover:text-red-500"
+                      >
+                        FAQ
+                        <svg
+                          class="w-3 h-3 ml-2"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            d="M1 1l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <ul
+                        class="absolute top-0 left-full ml-2 hidden group-hover/item:block z-20 bg-white rounded-lg shadow-md w-48 text-sm"
+                      >
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >FAQ 1</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >FAQ 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Portfolio -->
+                    <li class="relative group/item">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2 hover:text-red-500"
+                      >
+                        Portfolio
+                        <svg
+                          class="w-3 h-3 ml-2"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            d="M1 1l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <ul
+                        class="absolute top-0 left-full ml-2 hidden group-hover/item:block z-20 bg-white rounded-lg shadow-md w-48 text-sm"
+                      >
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Portfolio</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Portfolio Detail</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- Pricing (không có submenu) -->
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-red-500"
+                        >Pricing</a
+                      >
+                    </li>
+                    <!-- Utilities -->
+                    <li class="relative group/item">
+                      <a
+                        href="#"
+                        class="flex items-center justify-between px-4 py-2 hover:text-red-500"
+                      >
+                        Utilities
+                        <svg
+                          class="w-3 h-3 ml-2"
+                          fill="none"
+                          viewBox="0 0 6 10"
+                        >
+                          <path
+                            d="M1 1l4 4-4 4"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <ul
+                        class="absolute top-0 left-full ml-2 hidden group-hover/item:block z-20 bg-white rounded-lg shadow-md w-48 text-sm"
+                      >
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Error 404</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Login</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Signup</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:text-red-500"
+                            >Reset Password</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 md:p-0 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:dark:hover:text-black dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Services</a
+                  class="flex items-center px-3 py-2 text-black hover:text-black"
                 >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:dark:hover:text-black dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Pages</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 md:p-0 text-black rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-black md:dark:hover:text-black dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Contact</a
-                >
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </header> -->
+    </header>
+
+    <!-- HERO  -->
+    <section
+      class="bg-[#EEEAE4] dark:bg-[#EEEAE4] relative rounded-bl-[30px] rounded-br-[30px] pb-1 pt-10 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-10 xxl:pb-[133px] xxl:pt-[195px]"
+    >
+      <!-- HERO CONTENT  -->
+      <div
+        class="py-9 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:mb-20"
+      >
+        <h1
+          class="mb-6 text-[40px] font-bold tracking-tight leading-none text-black-900 sm:text-[60px] md:text-[80px] lg:text-[90px] xl:text-[120px] dark:text-black-900"
+        >
+          Simplify your SaaS<br />solution with AI
+        </h1>
+        <p
+          class="mb-8 text-lg font-semibold text-black-900 lg:text-xl sm:px-6 lg:px-24 dark:text-gray-900"
+        >
+          Our AI SAAS tool is a cloud-based software delivery model. It helps
+          businesses forecast demand for<br />
+          products and services and optimize inventory management and supply
+          chain operations.
+        </p>
+        <div
+          class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-6"
+        >
+          <a
+            href="#"
+            class="inline-flex justify-center items-center py-4 px-7 text-base text-white bg-black-500 hover:bg-[#FE330A] focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full text-md text-center dark:bg-black dark:hover:bg-[#FE330A] dark:focus:ring-orange-500 cursor-pointer"
+          >
+            Get started for free
+            <!-- <svg
+              class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg> -->
+          </a>
+          <a
+            href="#"
+            class="inline-flex justify-center items-center bg-transparent hover:bg-[#FE330A] focus:ring-4 focus:outline-none focus:ring-red-300 font-bold rounded-full border-2 text-md px-6 py-2 text-center dark:bg-[orange-50] dark:hover:bg-[#FE330A] dark:focus:ring-orange-500 cursor-pointer"
+          >
+            Learn more
+          </a>
+        </div>
+        <!-- HERO IMAGE -->
+        <div
+          class="hero-img overflow-hidden rounded-2xl bg-black jos mt-20"
+          data-jos_animation="zoom"
+          data-jos_once="1"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
+          <img
+            src="https://azzle.netlify.app/assets/img/th-1/hero-dashboard.jpg"
+            alt="hero-dashboard"
+            width="1296"
+            height="640"
+            class="h-auto w-full"
+          />
+        </div>
+        <div class="my-20 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
+        <!-- SLIDER  -->
+        <div
+          class="mx-auto mb-12 max-w-[715px] text-center lg:mb-16 jos"
+          data-jos_animation="fade-up"
+          data-jos_once="1"
+          data-jos_counter="1"
+          data-jos_scrolldirection="down"
+        >
+          <p class="text-lg">
+            Companies of all sizes trust us to find AI SaaS critical to their
+            growth and innovation
+          </p>
+        </div>
+        <!-- SLIDER MAIN -->
+        <div
+          class="swiper brand-slider swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <!-- ADDITIONNAL REQUIRED WRAPPER -->
+          <div class="swiper-wrapper" aria-live="off">
+            <!-- SLIDER CONTENT -->
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="1/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-1.png"
+                alt="brand-1"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="2/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-2.png"
+                alt="brand-2"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="3/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-3.png"
+                alt="brand-3"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide swiper-slide-prev"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="4/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-4.png"
+                alt="brand-4"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide swiper-slide-active"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="5/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-5.png"
+                alt="brand-5"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide swiper-slide-next"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="6/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-1.png"
+                alt="brand-1"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="7/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-2.png"
+                alt="brand-2"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="8/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-3.png"
+                alt="brand-3"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="9/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-4.png"
+                alt="brand-4"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+            <div
+              class="swiper-slide"
+              style="width: 176px; margin-right: 105px"
+              role="group"
+              aria-label="10/10"
+            >
+              <img
+                src="https://azzle.netlify.app/assets/img/th-1/brand-5.png"
+                alt="brand-5"
+                width="180"
+                height="38"
+                class="max-w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT -->
+
+    <!-- FLOWBITE CSS  -->
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <!-- JOS JS -->
+    <script>
+      JOS.init();
+    </script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".brand-slider", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 30,
+        speed: 600,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
   </body>
 </html>
